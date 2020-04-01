@@ -5,7 +5,7 @@ services:
     build: ./portfolio-dev/
     container_name: site
     volumes: 
-      - ./portofolio-dev/:/usr/src/app
+      - ./portfolio-dev/:/usr/src/app
     ports:
       - 3000:3000
     stdin_open: true
