@@ -2,10 +2,10 @@ version: '2.1'
 
 services:
   personal-site:
-    build: ./portfolio-dev/
+    build: .
     container_name: site
     volumes: 
-      - ./site/:/usr/src/app
+      - ./:/usr/src/app
     ports:
       - 3000:3000
     stdin_open: true
