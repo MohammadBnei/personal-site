@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "name": "nodejs",
+        "link": "https://nodejs.org/en/about/",
+        "icon": "/icons/nodejs.svg"
+    },
+    {
+        "id": 1,
+        "name": "react",
+        "link": "https://reactjs.org",
+        "icon": "/icons/react.svg"
+    }
+]

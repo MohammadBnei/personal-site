@@ -2,7 +2,8 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, SkillsWrapper, Details, Thumbnail, SkillLinks } from './styles';
+import skillIcons from './icons.json'
 
 export const Skills = () => (
     <Wrapper id="about">
@@ -11,11 +12,14 @@ export const Skills = () => (
                 <img src={dev} alt="I’m Mohammad and I’m a Fullstack & Devops engineer!" />
             </Thumbnail>
             <Details>
-                <h1>Hi There!</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry’s standard dummy.
-                </p>
+                <h1>My Skills</h1>
+                {
+                    skillIcons.map(e => (
+                        <SkillLinks href={e.link} rel="noopener noreferrer" target="_blank">
+                            <img width="72" src={e.icon} alt={name} />
+                        </SkillLinks>
+                    )
+                    )}
                 <Button as={AnchorLink} href="#contact">
                     Hire me
                 </Button>
