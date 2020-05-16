@@ -2,6 +2,6 @@
 
 docker exec site gatsby build
 
-ssh raspberry rm -rf /var/www/personnal-site/*
+ssh raspberry1 rm -rf /var/sites/portfolio/*
 
-scp -r portfolio-dev/public/* raspberry1:/var/www/personnal-site/
+scp -r public/* raspberry1:/var/sites/portfolio

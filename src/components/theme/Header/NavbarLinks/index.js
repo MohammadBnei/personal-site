@@ -8,7 +8,6 @@ const NavbarLinks = ({ desktop }) => (
     <Wrapper desktop={desktop}>
         <AnchorLink href="#about">About</AnchorLink>
         <AnchorLink href="#contact">Contact</AnchorLink>
-        <Link to="/csvreader">Csv Reader</Link>
     </Wrapper>
 );
 
