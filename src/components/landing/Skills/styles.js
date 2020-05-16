@@ -58,9 +58,12 @@ export const Thumbnail = styled.div`
 
 export const SkillIconContainer = styled.div`
     display: grid;
-    
+    grid-template-columns: repeat(auto-fit, minmax(74px, 100px));
+    place-items: center;
 `
 
-export const SkillLinks = styled.a`
-    padding: 2rem;
+export const ResumeContainer = styled.p`
+    display: grid;
+    place-items: center;
+    grid-gap: 2rem;
 `
