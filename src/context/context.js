@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-const PortfolioContext = React.createContext();
+const PortfolioContext = React.createContext()
 
-export const PortfolioProvider = PortfolioContext.Provider;
-export const PortfolioConsumer = PortfolioContext.Consumer;
+export const PortfolioProvider = PortfolioContext.Provider
+export const PortfolioConsumer = PortfolioContext.Consumer
 
-export default PortfolioContext;
+export default PortfolioContext
