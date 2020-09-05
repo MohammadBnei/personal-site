@@ -19,13 +19,22 @@ export const heroData = {
 export const aboutData = {
     img: 'profile.jpg',
     paragraphOne: 'I am a 25 years old computer science student specializing in web development.',
-    paragraphTwo: '',
+    paragraphTwo: 'With 2 years of professional experience as a developper in different companies, ',
     paragraphThree: '',
     resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 }
 
 // PROJECTS DATA
 export const projectsData = [
+    {
+        id: nanoid(),
+        img: 'personnal-site.jpg',
+        title: 'This site',
+        info: 'This site uses React and Gatsby. With SSR (Server Side Rendering), SEO optimization and PWA support.',
+        info2: '',
+        url: '',
+        repo: 'https://github.com/MohammadBnei/personal-site',
+    },
     {
         id: nanoid(),
         img: 'project.jpg',
@@ -47,30 +56,25 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
     networks: [
-        {
-            id: nanoid(),
-            name: 'twitter',
-            url: '',
-        },
-        {
-            id: nanoid(),
-            name: 'codepen',
-            url: '',
-        },
+        // {
+        //     id: nanoid(),
+        //     name: 'twitter',
+        //     url: '',
+        // },
         {
             id: nanoid(),
             name: 'linkedin',
-            url: '',
+            url: 'https://linkedin.com/in/mohammadbanaei95',
         },
         {
             id: nanoid(),
             name: 'github',
-            url: '',
+            url: 'https://github.com/MohammadBnei',
         },
     ],
 }
 
 // Github start/fork buttons
 export const githubButtons = {
-    isEnabled: true, // set to false to disable the GitHub stars/fork buttons
+    isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 }
