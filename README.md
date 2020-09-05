@@ -77,8 +77,6 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 ## Instructions
 
-### Step 1 - STRUCTURE
-
 Go to `/src/mock/data.js` and fill your information, they are 5 objects:
 
 ### Hero Section
@@ -178,43 +176,7 @@ export const footerData = {
 };
 ```
 
-### Required - Disable GitHub buttons
-
-Set `isEnabled` to `false` once you finish setup your portfolio.\
-By setting to `false` it will hide the GitHub stars/fork buttons
-
-```javascript
-export const githubButtons = {
-  isEnabled: true, // true is the default value
-};
-```
-
-### Step 2 - STYLES
-
-Change the color theme of the website ( choose 2 colors to create a gradient ):
-
-Go to `src/styles/abstracts/_variables.scss` and only change the values on this classes `$main-color` and `$secondary-color` to your prefered HEX color
-
-```scss
-// Default values
-$main-color: #02aab0;
-$secondary-color: #00cdac;
-```
-
-**_Note_**: I highly recommend to checkout gradients variations on [UI Gradient](https://uigradients.com/#BrightVault)
-
 ---
-
-## Deployment 📦
-
-Once you have done with your setup. You need to put your website online!
-
-I highly recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY
-
-## Others versions 👥
-
-[Simplefolio](https://github.com/cobidev/simplefolio) by [Jacobo Martinez](https://github.com/cobidev)\
-[Ember.js Simplefolio](https://github.com/sernadesigns/simplefolio-ember) by [Michael Serna](https://github.com/sernadesigns)
 
 ## Technologies used 🛠️
 
@@ -224,17 +186,9 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Front-End UI library
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
 
-## Authors
-
-- **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
-
 ## Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f3354755-c88c-4ef9-9921-062966b40d76/deploy-status)](https://app.netlify.com/sites/mohammadbanaei/deploys)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments 🎁
 
