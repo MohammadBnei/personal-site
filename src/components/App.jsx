@@ -7,12 +7,14 @@ import Footer from './Footer/Footer'
 
 import { PortfolioProvider } from '../context/context'
 
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data'
+import { heroData, aboutData, projectsData, skillsData, contactData, footerData } from '../mock/data'
+import Skills from './Skills/Skills'
 
 function App() {
     const [hero, setHero] = useState({})
     const [about, setAbout] = useState({})
     const [projects, setProjects] = useState([])
+    const [skills, setSkills] = useState([])
     const [contact, setContact] = useState({})
     const [footer, setFooter] = useState({})
 
@@ -20,15 +22,17 @@ function App() {
         setHero({ ...heroData })
         setAbout({ ...aboutData })
         setProjects([...projectsData])
+        setSkills([...skillsData])
         setContact({ ...contactData })
         setFooter({ ...footerData })
     }, [])
 
     return (
-        <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+        <PortfolioProvider value={{ hero, about, projects, skills, contact, footer }}>
             <Hero />
             <About />
             <Projects />
+            <Skills />
             <Contact />
             <Footer />
         </PortfolioProvider>

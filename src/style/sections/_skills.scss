@@ -1,6 +1,13 @@
-#projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+#skills {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   margin-top: -15rem;
   padding-top: 15rem;
 
@@ -9,7 +16,7 @@
     padding-top: 5rem;
   }
 
-  .project-wrapper {
+  .skill-wrapper {
     margin-bottom: 15rem;
 
     @include respond(phone) {

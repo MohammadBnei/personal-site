@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
     img: 'profile.jpg',
     paragraphOne: 'I am a 25 years old computer science student specializing in web development.',
-    paragraphTwo: 'With 2 years of professional experience as a developper in different companies, ',
+    paragraphTwo: 'With 2 years of professional experience as a developper in different companies',
     paragraphThree: '',
     resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 }
@@ -43,6 +43,16 @@ export const projectsData = [
         info2: '',
         url: '',
         repo: 'https://gitlab.com/rverdeyme/projet-react-paiement',
+    },
+]
+
+export const skillsData = [
+    {
+        id: nanoid(),
+        img: 'react.png',
+        title: 'React',
+        info: '',
+        url: '',
     },
 ]
 

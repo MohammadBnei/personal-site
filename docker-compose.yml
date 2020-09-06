@@ -6,6 +6,7 @@ services:
     container_name: site
     volumes: 
       - ./:/usr/src/app
+      - /usr/src/app/node_modules
     ports:
       - 3000:3000
-    stdin_open: true
+      - 44985:44985
