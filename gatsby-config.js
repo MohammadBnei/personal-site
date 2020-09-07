@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Mohammad BANAEI's portfolio`,
+        short_name: `Mohammad's portfolio`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#02aab0`,
@@ -31,5 +31,13 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: ['**/images*']
+         }
+      }
+   }
   ],
 };
