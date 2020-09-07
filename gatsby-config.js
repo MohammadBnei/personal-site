@@ -4,7 +4,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,18 +25,12 @@ module.exports = {
         short_name: `Mohammad's portfolio`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#02aab0`,
+        theme_color: `#7CE07E`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
+        cache_busting_mode: 'none'
       },
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-         workboxConfig: {
-            globPatterns: ['**/images*']
-         }
-      }
-   }
+    `gatsby-plugin-offline`,
   ],
 };
