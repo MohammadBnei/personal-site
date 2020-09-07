@@ -21,7 +21,6 @@ export const aboutData = {
     paragraphOne: 'I am a 25 years old computer science student specializing in web development.',
     paragraphTwo: 'With 2 years of professional experience as a developper in different companies, ',
     paragraphThree: 'Feel free to download my resume to know more about me',
-    resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 }
 
 // PROJECTS DATA
@@ -38,7 +37,7 @@ export const projectsData = [
     },
     {
         id: nanoid(),
-        img: 'project.jpg',
+        img: 'reactPayment.jpg',
         title: 'Payment API',
         info: `Using a microservices architecture, with nginx as a reverse proxy, we developped a payment API where you can register your business, generate API keys and then use it as a payment platform for your site.`,
         info2: 'This is a school project.',

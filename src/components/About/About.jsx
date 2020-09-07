@@ -6,6 +6,8 @@ import Title from '../Title/Title'
 import AboutImg from '../Image/AboutImg'
 import PortfolioContext from '../../context/context'
 
+import pdfFile from '../../images/MohammadBanaeiCV.pdf'
+
 const About = () => {
     const { about } = useContext(PortfolioContext)
     const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about
@@ -71,7 +73,8 @@ const About = () => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="cta-btn cta-btn--resume"
-                                            href={resume}
+                                            download
+                                            href={pdfFile}
                                         >
                       Resume
                                         </a>
