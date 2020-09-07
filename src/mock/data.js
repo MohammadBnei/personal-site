@@ -33,8 +33,7 @@ export const projectsData = [
         info: 'This site uses React and Gatsby. With SSR (Server Side Rendering), SEO optimization and PWA support.',
         info2: 'It is greatly optimized, as you can see by generating a lighthouse report.',
         url: '',
-        technologies: ['React', 'Gatsby', 'Docker', 'SSR', 
-    ],
+        technologies: ['React', 'Gatsby', 'Docker', 'SSR', 'SEO'],
         repo: 'https://github.com/MohammadBnei/personal-site',
     },
     {
@@ -44,7 +43,7 @@ export const projectsData = [
         info: `Using a microservices architecture, with nginx as a reverse proxy, we developped a payment API where you can register your business, generate API keys and then use it as a payment platform for your site.`,
         info2: 'This is a school project.',
         url: '',
-        technologies: [],
+        technologies: ['React', 'NodeJS', 'Nginx', 'Docker', 'Microservices'],
         repo: 'https://gitlab.com/rverdeyme/projet-react-paiement',
     },
 ]

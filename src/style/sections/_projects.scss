@@ -75,5 +75,13 @@
         }
       }
     }
+
+    .techno-pills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.5rem 1rem;
+      font-size: large;
+      align-items: center;
+    }
   }
 }

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import Tilt from 'react-tilt'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Badge } from 'react-bootstrap'
 import PortfolioContext from '../../context/context'
 import Title from '../Title/Title'
 import ProjectImg from '../Image/ProjectImg'
@@ -70,6 +70,11 @@ const Projects = () => {
                           Source Code
                                                 </a>
                                             )}
+                                            <div className="techno-pills">
+                                                {technologies && technologies.map(t => (
+                                                    <Badge key={t} pill variant="dark">{t}</Badge>
+                                                ))}
+                                            </div>
                                         </div>
                                     </Fade>
                                 </Col>
