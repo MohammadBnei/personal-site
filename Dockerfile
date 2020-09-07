@@ -7,7 +7,6 @@ WORKDIR /usr/src/app
 
 COPY ["package.json", "package-lock.json", "./"]
 
-RUN npm install -g gatsby-cli
 RUN npm i --silent
 
 CMD npm start

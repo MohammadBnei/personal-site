@@ -3,10 +3,10 @@ version: '2.1'
 services:
   personal-site:
     build: .
-    container_name: site
     volumes: 
       - ./:/usr/src/app
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
-      - 44985:44985
+    stdin_open: true
+
