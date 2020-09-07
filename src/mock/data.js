@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid'
+import pdfFile from '../images/MohammadBanaeiCV.pdf'
 
 // HEAD DATA
 export const headData = {
@@ -21,6 +22,7 @@ export const aboutData = {
     paragraphOne: 'I am a 25 years old computer science student specializing in web development.',
     paragraphTwo: 'With 2 years of professional experience as a developper in different companies, ',
     paragraphThree: 'Feel free to download my resume to know more about me',
+    resume: pdfFile
 }
 
 // PROJECTS DATA
