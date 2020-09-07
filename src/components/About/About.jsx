@@ -74,7 +74,7 @@ const About = () => {
                                             download
                                             href={resume}
                                         >
-                      Resume
+                      Download CV
                                         </a>
                                     </span>
                                 )}
