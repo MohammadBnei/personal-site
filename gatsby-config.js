@@ -24,6 +24,7 @@ module.exports = {
                 path: `${__dirname}/src/locales`,
                 languages: ['en', 'fr'],
                 defaultLanguage: 'en',
+                siteUrl: 'bnei.dev',
 
                 // you can pass any i18next options
                 // pass following options to allow message content as a key
