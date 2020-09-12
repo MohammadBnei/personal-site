@@ -1,7 +1,6 @@
 module.exports = {
     plugins: [
         'gatsby-plugin-sass',
-        'gatsby-plugin-react-helmet',
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         'gatsby-plugin-netlify',
@@ -46,7 +45,7 @@ module.exports = {
                 description: 'Showcasing my website, presenting my experiences and previous projects',
                 background_color: '#fff',
                 theme_color: '#7CE07E',
-                display: 'standalone',
+                display: 'fullscreen',
                 icon: 'src/images/favicon.png',
                 localize: [{
                     start_url: '/fr/',
