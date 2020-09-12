@@ -55,6 +55,11 @@ export const footerData = {
     ],
 }
 
+export const siteMetadata = {
+    siteUrl: 'https://bnei.dev/',
+    icon: 'favicon.png'
+}
+
 // Github start/fork buttons
 export const githubButtons = {
     isEnabled: false, // set to false to disable the GitHub stars/fork buttons
