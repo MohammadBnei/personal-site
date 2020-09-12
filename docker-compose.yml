@@ -4,8 +4,8 @@ services:
   personal-site:
     build: .
     volumes: 
-      - ./:/usr/src/app
       - /usr/src/app/node_modules
+      - ./:/usr/src/app
     ports:
       - 3000:3000
     stdin_open: true

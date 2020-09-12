@@ -1,20 +1,20 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import App from '../components/App'
-import { headData } from '../mock/data'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../style/main.scss'
+import { useTranslation } from 'react-i18next'
+import { Helmet } from 'gatsby-plugin-react-i18next'
 
-export default function index () {
-    const { title, lang, description } = headData
+export default function index() {
+    const { t } = useTranslation()
 
     return (
         <>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>{title || 'Gatsby Simplefolio'}</title>
-                <html lang={lang || 'en'} />
-                <meta name="description" content={description || 'Gatsby Simplefolio'} />
+                <title>{t('head.title')}</title>
+                <html lang={t('head.lang')} />
+                <meta name="description" content={t('head.description')} />
             </Helmet>
             <App />
         </>
