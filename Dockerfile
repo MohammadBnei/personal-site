@@ -7,6 +7,6 @@ WORKDIR /usr/src/app
 
 COPY ["package.json", "package-lock.json", "./"]
 
-RUN npm i --silent
+RUN npm i
 
 CMD npm start

@@ -5,8 +5,10 @@ import { Container, Row, Col, Badge } from 'react-bootstrap'
 import PortfolioContext from '../../context/context'
 import Title from '../Title/Title'
 import ProjectImg from '../Image/ProjectImg'
+import { useTranslation } from 'react-i18next'
 
 const Projects = () => {
+    const { t } = useTranslation()
     const { projects } = useContext(PortfolioContext)
 
     const [isDesktop, setIsDesktop] = useState(false)
@@ -26,9 +28,9 @@ const Projects = () => {
         <section id="projects">
             <Container>
                 <div className="project-wrapper">
-                    <Title title="Projects" />
+                    <Title title={t('projects')} />
                     {projects.map((project) => {
-                        const { title, info, info2, url, repo, img, id, technologies } = project
+                        const { url, repo, img, id, name, technologies } = project
 
                         return (
                             <Row key={id}>
@@ -41,22 +43,21 @@ const Projects = () => {
                                         distance="30px"
                                     >
                                         <div className="project-wrapper__text">
-                                            <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                                            <h3 className="project-wrapper__text-title">{t(`${name}.title`)}</h3>
                                             <div>
                                                 <p>
-                                                    {info ||
-                            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                                                    {t(`${name}.info`)}
                                                 </p>
-                                                <p className="mb-4">{info2 || ''}</p>
+                                                <p className="mb-4">{t(`${name}.info2`)}</p>
                                             </div>
                                             {url && (
                                                 <a
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="cta-btn cta-btn--hero"
-                                                    href={url || '#!'}
+                                                    href={url}
                                                 >
-                        See Live
+                                                    {t('See Live')}
                                                 </a>
                                             )}
 
@@ -67,12 +68,12 @@ const Projects = () => {
                                                     className="cta-btn text-color-main"
                                                     href={repo}
                                                 >
-                          Source Code
+                                                    {t('Source Code')}
                                                 </a>
                                             )}
                                             <div className="techno-pills">
-                                                {technologies && technologies.map(t => (
-                                                    <Badge key={t} pill variant="dark">{t}</Badge>
+                                                {technologies && technologies.map(tech => (
+                                                    <Badge key={tech} pill variant="dark">{tech}</Badge>
                                                 ))}
                                             </div>
                                         </div>
@@ -107,7 +108,7 @@ const Projects = () => {
                                                     }}
                                                 >
                                                     <div data-tilt className="thumbnail rounded">
-                                                        <ProjectImg alt={title} filename={img} />
+                                                        <ProjectImg alt={t(`${name}.title`)} filename={img} />
                                                     </div>
                                                 </Tilt>
                                             </a>

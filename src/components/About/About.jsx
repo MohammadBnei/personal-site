@@ -10,7 +10,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next'
 const About = () => {
     const { t } = useTranslation()
     const { about } = useContext(PortfolioContext)
-    const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about
+    const { img, resume } = about
 
     const [isDesktop, setIsDesktop] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
@@ -28,7 +28,7 @@ const About = () => {
     return (
         <section id="about">
             <Container>
-                <Title title="About Me" />
+                <Title title={t('about me')} />
                 <Row className="about-wrapper">
                     <Col md={6} sm={12}>
                         <Fade bottom duration={1000} delay={600} distance="30px">
@@ -57,13 +57,13 @@ const About = () => {
                         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
                             <div className="about-wrapper__info">
                                 <p className="about-wrapper__info-text">
-                                    {t('paragraphOne')}
+                                    {t('about.paragraphOne')}
                                 </p>
                                 <p className="about-wrapper__info-text">
-                                    {t('paragraphTwo')}
+                                    {t('about.paragraphTwo')}
                                 </p>
                                 <p className="about-wrapper__info-text">
-                                    {t('paragraphThree')}
+                                    {t('about.paragraphThree')}
                                 </p>
                                 {resume && (
                                     <span className="d-flex mt-3">
@@ -74,7 +74,7 @@ const About = () => {
                                             download
                                             href={resume}
                                         >
-                                            {t('downloadBtn')}
+                                            {t('about.downloadBtn')}
                                         </a>
                                     </span>
                                 )}

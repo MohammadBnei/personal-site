@@ -1,0 +1,36 @@
+{
+    "head": {
+        "title": "Banaei - Développeur web",
+        "lang": "fr",
+        "description": "Voici mon site web, présentant mes capacités ainsi que mes experiences passées."
+    },
+    "hero": {
+        "title": "Bonjour, mon nom est ",
+        "name": "Mohammad-Amine BANAEI",
+        "subtitle": "Bienvenu sur mon portfolio",
+        "cta": "En savoir plus"
+    },
+    "about": {
+        "paragraphOne": "Etudiant de 25 ans en science informatique spécialisé dans le développement web.",
+        "paragraphTwo": "Avec plus de 2 années d'expérience professionnelle en tant que développeur dans différentes compagnies.",
+        "paragraphThree": "N'hésitez pas à visionner mon CV pour en connaitre plus.",
+        "downloadBtn": "Télécharger le CV"
+    },
+    "portfolio": {
+        "title": "Ce site",
+        "info": "Ce site utilise ReactJS et Gatsby. Utilisant le SSR (rendu côté serveur), l'optimisation SEO et le support PWA",
+        "info2": "Vous pouvez générer un rapport lighthouse afin de vérifier l'optimisation"
+    },
+    "reactPayment": {
+        "title": "API payment",
+        "info": "Utilisant l'architecture mocroservice, avec Nginx en reverse proxy, nous avons développé une API de paiement où vous enregistrez votre entreprise, generez vos clés API et utilisez la plateforme de paiement sur votre site.",
+        "info2": "Ce projet à été réalisé dans le cadre de ma formation."
+    },
+    "contact": {
+        "title": "contact",
+        "cta": "Vous voulez collaborer? Génial!",
+        "btn": "M'envoyer un email!"
+    },
+    "projects": "projets",
+    "about me": "a propos de moi"
+}
