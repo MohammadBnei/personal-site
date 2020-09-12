@@ -5,7 +5,8 @@ import pdfFile from '../images/MohammadBanaeiCV.pdf'
 // ABOUT DATA
 export const aboutData = {
     img: 'profile.jpg',
-    resume: pdfFile
+    resumeen: pdfFile,
+    resumefr: pdfFile
 }
 
 // PROJECTS DATA

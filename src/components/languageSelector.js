@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { useI18next } from 'gatsby-plugin-react-i18next'
+import { useI18next, Link } from 'gatsby-plugin-react-i18next'
 import Fade from 'react-reveal/Fade'
 
 const LanguageSelector = () => {
-    const { languages, changeLanguage } = useI18next()
+    const { languages, originalPath } = useI18next()
 
     const [isDesktop, setIsDesktop] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
@@ -22,16 +22,13 @@ const LanguageSelector = () => {
             <div className="language-selector">
                 {languages.map(lng => (
                     <span className="d-flex mt-3" key={lng}>
-                        <a
-                            href="#"
+                        <Link
+                            to={originalPath}
+                            language={lng}
                             className="cta-btn cta-btn--hero"
-                            onClick={e => {
-                                e.preventDefault()
-                                changeLanguage(lng)
-                            }}
                         >
                             {lng}
-                        </a>
+                        </Link>
                     </span>
                 ))}
             </div>

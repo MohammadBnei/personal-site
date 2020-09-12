@@ -27,6 +27,7 @@
         "info2": "This is a school project."
     },
     "contact": {
+        "title": "contact",
         "cta": "Would you like to work with me? Awesome!",
         "btn": "Email me!"
     }
