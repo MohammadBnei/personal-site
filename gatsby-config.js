@@ -24,7 +24,7 @@ module.exports = {
                 path: `${__dirname}/src/locales`,
                 languages: ['en', 'fr'],
                 defaultLanguage: 'en',
-      
+
                 // you can pass any i18next options
                 // pass following options to allow message content as a key
                 i18nextOptions: {
@@ -41,11 +41,18 @@ module.exports = {
                 name: 'Mohammad BANAEI\'s portfolio',
                 short_name: 'Mohammad\'s portfolio',
                 start_url: '/',
+                description: 'Showcasing my website, presenting my experiences and previous projects',
                 background_color: '#fff',
                 theme_color: '#7CE07E',
                 display: 'standalone',
                 icon: 'src/images/favicon.png',
-                cache_busting_mode: 'none'
+                localize: [{
+                    start_url: '/fr',
+                    lang: 'fr',
+                    name: 'Mohammad BANAEI - Portfolio',
+                    short_name: 'Mohammad - Portfolio',
+                    description: 'Ce site présente mes capacités ainsi que mes experiences passées.'
+                }]
             },
         },
         'gatsby-plugin-offline',

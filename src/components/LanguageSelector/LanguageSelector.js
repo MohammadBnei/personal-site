@@ -21,7 +21,7 @@ const LanguageSelector = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <div className="language-selector">
                 {languages.map(lng => (
-                    <span className="d-flex mt-3" key={lng}>
+                    <span className="d-flex mt-3 lang-btn" key={lng}>
                         <Link
                             to={originalPath}
                             language={lng}
