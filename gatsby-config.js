@@ -49,7 +49,7 @@ module.exports = {
                 display: 'standalone',
                 icon: 'src/images/favicon.png',
                 localize: [{
-                    start_url: '/fr',
+                    start_url: '/fr/',
                     lang: 'fr',
                     name: 'Mohammad BANAEI - Portfolio',
                     short_name: 'Mohammad - Portfolio',
