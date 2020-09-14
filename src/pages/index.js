@@ -12,7 +12,7 @@ export default function index() {
 
     return (
         <>
-            <Helmet defer={false} defaultTitle="Banaei - Web Developper" titleTemplate={'%s | Banaei - Web Developper'}>
+            <Helmet defer={false} defaultTitle="Banaei - Web Developper" >
                 <meta charSet="utf-8" />
                 <html lang={t('head.lang')} />
                 <link rel="canonical" href={siteUrl} />
