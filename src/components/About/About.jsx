@@ -27,6 +27,7 @@ const About = () => {
 
     return (
         <section id="about">
+            {/* <Profile> */}
             <Container>
                 <Title title={t('about me')} />
                 <Row className="about-wrapper">
@@ -83,6 +84,7 @@ const About = () => {
                     </Col>
                 </Row>
             </Container>
+            {/* </Profile> */}
         </section>
     )
 }

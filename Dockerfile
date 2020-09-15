@@ -3,6 +3,8 @@ FROM node:13
 RUN apt-get update
 RUN apt-get install libglu1 -y
 
+RUN apt-get -y install sudo
+
 WORKDIR /usr/src/app
 
 COPY ["package.json", "package-lock.json", "./"]

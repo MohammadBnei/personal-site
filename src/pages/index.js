@@ -33,6 +33,16 @@ export default function index() {
                 <meta name="twitter:card" content="summary" />
                 <meta name="title" content={t('head.title')} />
                 <meta name="description" content={t('head.description')} />
+                <script type="application/ld+json">
+                    {`
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "url": "https://www.bnei.dev",
+                        "name": "Mohammad Banaei"
+                        }
+                    `}
+                </script>
             </Helmet>
             <App />
         </>
