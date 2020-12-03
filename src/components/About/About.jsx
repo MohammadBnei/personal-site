@@ -8,9 +8,9 @@ import PortfolioContext from '../../context/context'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 
 const About = () => {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
     const { about } = useContext(PortfolioContext)
-    const { img, resume } = about
+    const { img, ...resume } = about
 
     const [isDesktop, setIsDesktop] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
@@ -72,7 +72,7 @@ const About = () => {
                                             rel="noopener noreferrer"
                                             className="cta-btn cta-btn--resume"
                                             download
-                                            href={resume}
+                                            href={i18n.language === 'fr' ? resume.resumefr : resume.resumeen || resume.resumeen}
                                         >
                                             {t('about.downloadBtn')}
                                         </a>
