@@ -1,11 +1,12 @@
 import { nanoid } from 'nanoid'
 import pdfFile from '../images/MohammadBanaeiCV.pdf'
+import pdfFileEn from '../images/MohammadBanaeiCV-EN.pdf'
 
 
 // ABOUT DATA
 export const aboutData = {
     img: 'profile.jpg',
-    resumeen: pdfFile,
+    resumeen: pdfFileEn,
     resumefr: pdfFile
 }
 
