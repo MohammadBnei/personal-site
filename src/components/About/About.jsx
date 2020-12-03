@@ -65,19 +65,17 @@ const About = () => {
                                 <p className="about-wrapper__info-text">
                                     {t('about.paragraphThree')}
                                 </p>
-                                {resume && (
-                                    <span className="d-flex mt-3">
-                                        <a
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="cta-btn cta-btn--resume"
-                                            download
-                                            href={i18n.language === 'fr' ? resume.resumefr : resume.resumeen || resume.resumeen}
-                                        >
-                                            {t('about.downloadBtn')}
-                                        </a>
-                                    </span>
-                                )}
+                                <span className="d-flex mt-3">
+                                    <a
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="cta-btn cta-btn--resume"
+                                        download
+                                        href={i18n.language === 'fr' ? resume.resumefr : resume.resumeen || resume.resumeen}
+                                    >
+                                        {t('about.downloadBtn')}
+                                    </a>
+                                </span>
                             </div>
                         </Fade>
                     </Col>
