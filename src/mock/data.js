@@ -28,6 +28,14 @@ export const projectsData = [
         technologies: ['React', 'NodeJS', 'Nginx', 'Docker', 'Microservices'],
         repo: 'https://gitlab.com/rverdeyme/projet-react-paiement',
     },
+    {
+        id: nanoid(),
+        img: 'searchSystem.jpg',
+        name: 'searchSystem',
+        url: '',
+        technologies: ['React', 'NodeJS', 'Hapi', 'Nginx', 'Docker', 'SSE'],
+        repo: 'https://github.com/MohammadBnei/alliance-search-system/',
+    },
 ]
 
 // CONTACT DATA

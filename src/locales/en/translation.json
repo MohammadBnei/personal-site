@@ -26,6 +26,11 @@
         "info": "Using a microservices architecture, with nginx as a reverse proxy, we developped a payment API where you can register your business, generate API keys and then use it as a payment platform for your site.",
         "info2": "This is a school project."
     },
+    "searchSystem": {
+        "title": "Alliance Search System (Swapi api)",
+        "info": "Search system using React Hooks, Node Js SSE with an https server. You can navigate through entities, and the router can read the url to go to a specific resource.",
+        "info2": "Made with love."
+    },
     "contact": {
         "title": "contact",
         "cta": "Would you like to work with me? Awesome!",

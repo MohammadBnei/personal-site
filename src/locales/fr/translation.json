@@ -22,9 +22,14 @@
         "info2": "Vous pouvez générer un rapport lighthouse afin de vérifier l'optimisation"
     },
     "reactPayment": {
-        "title": "API payment",
+        "title": "API Payment",
         "info": "Utilisant l'architecture mocroservice, avec Nginx en reverse proxy, nous avons développé une API de paiement où vous enregistrez votre entreprise, generez vos clés API et utilisez la plateforme de paiement sur votre site.",
         "info2": "Ce projet à été réalisé dans le cadre de ma formation."
+    },
+    "searchSystem": {
+        "title": "Alliance Search System (Swapi api)",
+        "info": "Système de recherche utilisant React Hooks, Node Js SSE avec un serveur https. On peut naviguer entre les entités reliées, et le router peut lire l'url pour nous emmener à une ressource spécifique.",
+        "info2": "Fait avec amour."
     },
     "contact": {
         "title": "contact",
