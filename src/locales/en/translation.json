@@ -31,6 +31,11 @@
         "info": "Search system using React Hooks, Node Js SSE with an https server. You can navigate through entities, and the router can read the url to go to a specific resource.",
         "info2": "Made with love."
     },
+    "voconsteroid": {
+        "title": "Voc On Steroid",
+        "info": "Online dictionnary, scrapping data from wikitionnary. With a microservices design, a kubernetes cloud implementation and a SSR frontend.",
+        "info2": "Feel free to check the website and give me any feedback !"
+    },
     "contact": {
         "title": "contact",
         "cta": "Would you like to work with me? Awesome!",

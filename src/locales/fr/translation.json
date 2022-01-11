@@ -31,6 +31,11 @@
         "info": "Système de recherche utilisant React Hooks, Node Js SSE avec un serveur https. On peut naviguer entre les entités reliées, et le router peut lire l'url pour nous emmener à une ressource spécifique.",
         "info2": "Fait avec amour."
     },
+    "voconsteroid": {
+        "title": "Voc On Steroid",
+        "info": "Dictionnaire scrapper de wikitionnary, avec une architecture microservices et SvelteKit (SSR) en front.",
+        "info2": "N'hésitez pas à vous créer un compte et me proposer un feedback, je suis preneur !"
+    },
     "contact": {
         "title": "contact",
         "cta": "Vous voulez collaborer? Génial!",

@@ -36,6 +36,13 @@ export const projectsData = [
         technologies: ['React', 'NodeJS', 'Hapi', 'Nginx', 'Docker', 'SSE'],
         repo: 'https://github.com/MohammadBnei/alliance-search-system/',
     },
+    {
+        id: nanoid(),
+        img: 'voconsteroid.jpg',
+        name: 'voconsteroid',
+        url: 'https://voconsteroid.com',
+        technologies: ['SvelteKit', 'NodeJS', 'Golang', 'Microservices', 'Docker', 'ElasticSearch'],
+    },
 ]
 
 // CONTACT DATA
